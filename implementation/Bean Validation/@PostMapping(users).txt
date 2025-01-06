@@ -1,0 +1,4 @@
+@PostMapping("/users")
+public ResponseEntity<User> createUser(@Valid @RequestBody UserDTO userDTO) {
+    // Controller logic
+}
