@@ -1,0 +1,8 @@
+@RestController
+@RequestMapping("/api/users")
+public class UserController {
+    @GetMapping("/{id}")
+    public ResponseEntity<User> getUserById(@PathVariable Long id) {
+        // Controller logic here
+    }
+}
