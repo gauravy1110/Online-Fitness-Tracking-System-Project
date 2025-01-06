@@ -1,0 +1,4 @@
+@Async
+public void sendEmail(String email) {
+    // Logic to send email
+}
