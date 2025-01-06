@@ -1,0 +1,5 @@
+- Frontend: React
+- Backend: Spring Boot
+- Database: MySQL
+- Security: Spring Security, JWT Authentication
+- Deployment: AWS with Docker

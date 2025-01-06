@@ -1,0 +1,2 @@
+@GetMapping("/users")
+public List<User> getAllUsers() { }

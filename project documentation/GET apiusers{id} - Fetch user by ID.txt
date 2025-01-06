@@ -1,0 +1,2 @@
+GET /api/users/{id} - Fetch user by ID
+POST /api/workouts - Log a new workout

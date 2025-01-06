@@ -1,0 +1,2 @@
+Table: Users
+Columns: id (PK), name, email, password

@@ -1,0 +1,25 @@
+@RunWith(MockitoJUnitRunner.class)
+public class UserServiceTest {
+
+    @InjectMocks
+    private UserService userService; // Service under test
+
+    @Mock
+    private UserRepository userRepository; // Mocked dependency
+
+    @Test
+    public void testGetUserById() {
+        // Arrange
+        Long userId = 1L;
+        User mockUser = new User(userId, "John Doe", "john@example.com");
+        when(userRepository.findById(userId)).thenReturn(Optional.of(mockUser));
+
+        // Act
+        User result = userService.getUserById(userId);
+
+        // Assert
+        assertNotNull(result);
+        assertEquals("John Doe", result.getName());
+        verify(userRepository, times(1)).findById(userId);
+    }
+}
